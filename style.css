@@ -1,0 +1,113 @@
+body{
+    background-image:url(bg.png);
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat; 
+    height: 100vh;
+}
+h1{
+    text-align: center; 
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    line-height: 0.5; 
+    margin-bottom: 50px;  
+    color:white;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-shadow: 2px 2px 4px black;
+}
+.button-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 70px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  flex-shrink: 0;
+  min-width: 0;
+  flex-grow: 1;
+    transition: 1s;
+}
+.button-container:hover{
+    transform:scale(2);
+    transition: 1s;
+}
+.steckbrief{
+    padding-right:20px;
+    padding-left: 20px;
+    flex: 0 0 auto;
+    width:max-content;
+    max-width: 100%;
+    min-width: 0;
+    display: list-item;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin-right: 250px;
+    flex-shrink: 0;
+    margin-bottom: -1000px;
+    border: solid 4px grey;
+    color:white;
+    background-color: black;
+}
+.head{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px grey;
+}
+.title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    margin-top: 5px;
+    font-size: 20px;
+}
+li{
+    margin-top: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: large;
+    font-weight: 550;
+    line-height: 40px;
+}
+.info{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px grey;
+}
+.info-answer{
+    margin-top: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: large;
+    font-weight: 550;
+}
+.infoBox{
+    position: fixed;
+  right: 20px;
+  top: 40%;
+  background-color: rgb(255, 255, 255);
+  padding-right:20px;
+    padding-left: 20px;
+    border: 4px solid white;
+    border-radius: 50px;
+     background-color: black;
+    color:white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
