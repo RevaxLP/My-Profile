@@ -21,7 +21,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  position:absolute;
+  position:relative;
   z-index:1;
   height: 100px;
   margin-bottom: 70px;
