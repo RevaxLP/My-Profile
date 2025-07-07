@@ -1,7 +1,8 @@
 body{
     background:linear-gradient(red, purple, blue);
-    height: 100vh;
     background-repeat:no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
 }
 h1{
     text-align: center; 
