@@ -31,6 +31,7 @@ h1{
   min-width: 0;
   flex-grow: 1;
   transition: 0.25s;
+    filter: drop-shadow(5 5 5px black);
 }
 .button-container:hover{
     transform:scale(2);
@@ -46,14 +47,14 @@ h1{
     display: list-item;
     justify-content:center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     border-radius: 50px;
     margin-right: 250px;
     flex-shrink: 0;
     margin-bottom: -1200px;
     border: solid 4px white;
     color:white;
-    background-color: black;
     z-index:3;
     position:absolute;
 }
@@ -108,7 +109,8 @@ li{
   padding-left: 20px;
   border: 4px solid white;
   border-radius: 50px;
-  background-color: black;
+  background-color: transparent;
+    backdrop-filter: blur(10px);
   color:white;
   z-index:2;
 }
