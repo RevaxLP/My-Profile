@@ -1,9 +1,5 @@
 body{
-    background-image:url(bg.png);
-    background-position: center;
-    background-size: 150%;
-    background-repeat: no-repeat; 
-    height: 100vh;
+    background:linear-gradient(red, purple, blue)
 }
 h1{
     text-align: center; 
