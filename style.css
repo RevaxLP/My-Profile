@@ -13,7 +13,7 @@ h1{
     color:white;
     text-decoration: underline;
     text-decoration-color: black;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 5px 5px 5px black;
 }
 .button-container {
   flex: 1;
