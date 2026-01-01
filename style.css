@@ -1,6 +1,5 @@
 /* Basis-Variablen und Reset */
 :root{
-  --gradient: linear-gradient(#ff5f6d, #1e90ff);
   --glass-bg: rgba(255,255,255,0.06);
   --border-white: rgba(255,255,255,0.9);
   --text: #ffffff;
@@ -18,7 +17,7 @@ html, body { height: 100%; margin: 0; }
 
 /* Hintergrund */
 body{
-  background: var(--gradient);
+  background: purple;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; /* wird auf kleinen Bildschirmen via Media Query angepasst */
