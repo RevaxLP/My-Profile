@@ -1,168 +1,128 @@
-/* Basis-Variablen und Reset */
-:root{
-  --glass-bg: rgba(255,255,255,0.06);
-  --border-white: rgba(255,255,255,0.9);
-  --text: #ffffff;
-  --accent: #1e90ff;
-  --shadow-dark: rgba(0,0,0,0.6);
-  --radius: 40px;
-  --transition-fast: 0.25s ease;
-}
-
-*,
-*::before,
-*::after { box-sizing: border-box; }
-
-html, body { height: 100%; margin: 0; }
-
-/* Hintergrund */
 body{
-  background: rgba(0,255,255;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; /* wird auf kleinen Bildschirmen via Media Query angepasst */
-  min-height: 100vh;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: var(--text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.4;
-  padding: 1rem;
+    background:linear-gradient(red, purple, blue);
+    background-repeat:no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
 }
-
-/* Headline responsive */
 h1{
-  text-align: center;
-  font-size: clamp(2.5rem, 6vw, 5.5rem); /* anpassbar */
-  line-height: 0.9;
-  margin: 0 0 50px 0;
-  color: var(--text);
-  text-decoration: underline;
-  text-decoration-color: rgba(0,0,0,0.6);
-  text-shadow: 5px 5px 5px var(--shadow-dark);
+    text-align: center; 
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    line-height: 0.5; 
+    margin-bottom: 50px;  
+    color:white;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-shadow: 5px 5px 5px black;
 }
-
-/* Button-Container - sanfteres Hover, kein Layout-Break */
 .button-container {
-  display: inline-flex;
+  flex: 1;
+  display: flex;
   justify-content: center;
   align-items: center;
+  position:relative;
+  z-index:1;
   height: 100px;
-  padding: 0 8px;
-  border-radius: 12px;
-  transition: transform var(--transition-fast), filter var(--transition-fast);
-  filter: drop-shadow(5px 5px 5px var(--shadow-dark));
+  margin-bottom: 70px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  flex-shrink: 0;
+  min-width: 0;
+  flex-grow: 1;
+  transition: 0.25s;
+    filter: drop-shadow(5px 5px 5px black);
 }
-.button-container:hover,
-.button-container:focus-within {
-  transform: scale(1.08);
+.button-container:hover{
+    transform:scale(2);
+    transition: 0.25s;
 }
-
-/* Steckbrief (Glass card) - vermeide extreme negative margin und list-item */
 .steckbrief{
-  position: absolute;
-  top: 120px;
-  left: 20px;
-  max-width: 320px;
-  width: calc(100% - 40px);
-  padding: 1rem 1.25rem;
-  background-color: var(--glass-bg);
-  backdrop-filter: blur(6px);
-  border-radius: var(--radius);
-  border: 4px solid rgba(255,255,255,0.25);
-  color: var(--text);
-  z-index: 3;
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.6), 0 6px 20px rgba(0,0,0,0.3);
-  display: block;
+    padding-right:20px;
+    padding-left: 20px;
+    flex: 0 0 auto;
+    width:max-content;
+    max-width: 100%;
+    min-width: 0;
+    display: list-item;
+    justify-content:center;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur;
+    border-radius: 40px;
+    margin-right: 250px;
+    flex-shrink: 0;
+    margin-bottom: -1200px;
+    border: solid 4px white;
+    color:white;
+    z-index:3;
+    position:absolute;
+    box-shadow:inset 0 0 20px black;
 }
-
-/* Typografie innerhalb der Karte */
 .head{
-  text-align: center;
-  text-decoration: underline;
-  font-size: 1.25rem;
-  text-shadow: 2px 2px 2px grey;
-  margin-bottom: 0.5rem;
-  z-index: 3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px grey;
+    z-index:3;
 }
 .title{
-  text-decoration: underline;
-  margin-top: 0.25rem;
-  font-size: 1rem;
-  z-index: 3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    margin-top: 5px;
+    font-size: 20px;
+    z-index:3;
 }
 li{
-  margin-top: 0.25rem;
-  font-style: italic;
-  font-size: 1rem;
-  font-weight: 550;
-  line-height: 1.6;
-  z-index: 3;
+    margin-top: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: large;
+    font-weight: 550;
+    line-height: 40px;
+    z-index:3;
 }
-
-/* Info Sektion */
 .info{
-  text-align: center;
-  margin: 10px 0 15px 0;
-  text-decoration: underline;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 2px grey;
-  z-index: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px grey;
+    z-index:2;
 }
 .info-answer{
-  margin-top: 0.5rem;
-  font-style: italic;
-  font-size: 1rem;
-  font-weight: 550;
-  z-index: 2; /* vorher falsch als x-index */
+    margin-top: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: large;
+    font-weight: 550;
+    x-index:2;
 }
-
-/* Fixed Info-Box rechts (Glass card) */
 .infoBox{
-  position: fixed;
+    position: fixed;
   right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 1rem 1.25rem;
-  border-radius: var(--radius);
-  background-color: var(--glass-bg);
-  backdrop-filter: blur(6px);
-  border: 4px solid rgba(255,255,255,0.25);
-  color: var(--text);
-  z-index: 2;
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.6), 0 6px 20px rgba(0,0,0,0.25);
+  top: 40%;
+  background-color: rgb(255, 255, 255);
+  padding-right:20px;
+  padding-left: 20px;
+  border: 4px solid white;
+  border-radius: 40px;
+  background-color: transparent;
+  backdrop-filter: blur;
+  color:white;
+  z-index:2;
+  box-shadow:inset 0 0 20px black;
 }
-
-/* Links & Fokuszustand für Zugänglichkeit */
 a{
-  color: var(--text);
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
+    z-index:3;
 }
-a:hover{ text-decoration: underline; color: var(--accent); }
-a:focus-visible {
-  outline: 3px dashed rgba(255,255,255,0.6);
-  outline-offset: 3px;
-}
-
-/* Mobile- / kleine Bildschirme Anpassungen */
-@media (max-width: 800px){
-  body{ background-attachment: scroll; } /* fixes mobile issues */
-  .steckbrief{
-    position: static;
-    margin: 1rem auto;
-    transform: none;
-    width: calc(100% - 2rem);
-  }
-  .infoBox{ position: static; transform: none; margin: 1rem auto; width: calc(100% - 2rem); }
-  h1{ font-size: clamp(2rem, 10vw, 3.5rem); margin-bottom: 24px; }
-  .button-container{ height: auto; padding: 0.5rem; }
-  .button-container:hover{ transform: none; } /* kein starkes Skalieren auf Touch */
-}
-
-/* Reduced motion Präferenz */
-@media (prefers-reduced-motion: reduce){
-  .button-container,
-  .button-container:hover,
-  .steckbrief,
-  .infoBox { transition: none; animation: none; transform: none; }
+a:hover{
+    text-decoration: underline;
+    color: blue;
+    z-index:3;
 }
