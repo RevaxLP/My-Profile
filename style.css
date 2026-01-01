@@ -49,7 +49,7 @@ h1{
     align-items: center;
     background-color: transparent;
     backdrop-filter: blur;
-    border-radius: 50px;
+    border-radius: 40px;
     margin-right: 250px;
     flex-shrink: 0;
     margin-bottom: -1200px;
@@ -109,7 +109,7 @@ li{
   padding-right:20px;
   padding-left: 20px;
   border: 4px solid white;
-  border-radius: 50px;
+  border-radius: 40px;
   background-color: transparent;
   backdrop-filter: blur;
   color:white;
