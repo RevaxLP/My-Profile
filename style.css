@@ -1,6 +1,6 @@
 /* Basis-Variablen und Reset */
 :root{
-  --gradient: linear-gradient(90deg, #ff5f6d, #8e44ad, #1e90ff);
+  --gradient: linear-gradient(#ff5f6d, #1e90ff);
   --glass-bg: rgba(255,255,255,0.06);
   --border-white: rgba(255,255,255,0.9);
   --text: #ffffff;
